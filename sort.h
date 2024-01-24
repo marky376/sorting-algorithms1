@@ -4,9 +4,11 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <stddef.h>
 
+void swap(int *a, int *b); 
 void print_array(const int *array, size_t size);
-void print_list(const listint_t *list);
+/*void print_list(const listint_t *list);*/
 /**
  * struct listint_s - Doubly linked list node
  *
@@ -14,6 +16,7 @@ void print_list(const listint_t *list);
  * @prev: Pointer to the previous element of the list
  * @next: Pointer to the next element of the list
  */
+/*
 typedef struct listint_s
 {
     const int n;
@@ -21,9 +24,11 @@ typedef struct listint_s
     struct listint_s *next;
 } listint_t;
 void insertion_sort_list(listint_t **list);
+*/
 void bubble_sort(int *array, size_t size);
+/*
 void selection_sort(int *array, size_t size);
 void quick_sort(int *array, size_t size);
 void shell_sort(int *array, size_t size);
-
+*/
 #endif
